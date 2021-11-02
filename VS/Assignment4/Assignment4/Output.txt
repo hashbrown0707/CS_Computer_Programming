@@ -1,0 +1,22 @@
+iostream
+iomanip
+vector
+std
+outputVector
+inputVector
+start
+main
+integers1
+integers2
+cout
+size
+endl
+integers3
+at
+a
+size_t
+i
+setw
+array
+cin
+請按任意鍵繼續 . . .

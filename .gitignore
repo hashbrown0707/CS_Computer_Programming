@@ -1,0 +1,6 @@
+[Dd]ebug/
+
+*.sln
+*.vcxproj
+*.filters
+*.user

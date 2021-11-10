@@ -337,6 +337,9 @@ void addition(int*& addendCoef, int*& addendExpon, int& addendSize,
 	}
 #pragma endregion
 
+	delete[] addendCoef;
+	delete[] addendExpon;
+
 	if (addendSize != k)
 	{
 		addendCoef = new int[k];
@@ -476,6 +479,9 @@ void division(int* dividendCoef, int* dividendExpon, int dividendSize,
 		//output(remainderCoef, remainderExpon, remainderSize);
 
 		++quotientSize;
+
+		delete[] bufferCoef;
+		delete[] bufferExpon;
 	}
 
 	quotientCoef = new int[quotientSize];
@@ -488,9 +494,6 @@ void division(int* dividendCoef, int* dividendExpon, int dividendSize,
 
 	delete[] monomialCoef;
 	delete[] monomialExpon;
-
-	delete[] bufferCoef;
-	delete[] bufferExpon;
 
 	if (quotientSize > 0 && quotientCoef[0] == 0)
 		cout << "Leading zeroes in quotient not allowed!\n";
